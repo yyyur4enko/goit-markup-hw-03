@@ -37,7 +37,7 @@ text-decoration: none;
 }
 
 body {
-    font-family: var(--primary-font)
+    font-family: var(--primary-font);
 }
 
 .section {
@@ -155,16 +155,11 @@ align-items: center;
 /* HERO */
 .main-page {
         background: #2F303A;
-        border: 1px solid #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        position: absolute;
-            width: 1600px;
-            height: 600px;
-            left: 0px;
-            top: 80px;
-        
-            
-}    
+        /* border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+        padding-top: 200px;
+}  
+
 .main-page-title {
         font-weight: 900;
         font-size: 44px;
@@ -174,11 +169,11 @@ align-items: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
-        padding-left: 452px;
-        padding-right: 452px;
-        padding-top: 200px;
-        padding-bottom: 30px;
-        flex-wrap: wrap;
+    
+        max-width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
 }
 
 .mdl-btn {
@@ -190,11 +185,16 @@ align-items: center;
         font-size: 16px;
         line-height: 1.87;
         color: #FFFFFF;
-        margin-left: 700px;
-        margin-right: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 107px;
         padding: 10px 32px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        width: 200px;   
+        min-width: 200px;   
         min-height: 50px;
     }
 /* HERO */
@@ -203,8 +203,13 @@ align-items: center;
  display: flex;
  align-items: center;
  justify-content: space-around;
- padding-top: 94px;
-
+ 
+}
+.about-section-two {
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+padding-top: 0px;
 }
 
 .list-title {
@@ -213,31 +218,52 @@ align-items: center;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--main-color);
+    margin-bottom: 10px;
+    max-width: 270px;
 }
+
 .list-title-description {
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-
     color: var(--subcolor);
+    width: 270px;
 }
-
+ 
 .section-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
-    
         color: var(--main-color);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;       
+}
+.about-pcs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
 }
 /* ABOUT */
 /* TEAM */
 .section-team {
     background: #F5F4FA;
+}
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.employee-card {
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc(100%-30*3)\4;
 }
 
 .name {
@@ -247,8 +273,9 @@ align-items: center;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--main-color);
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 .portfolio-name {
     font-family: var(--primary-font);
@@ -267,19 +294,33 @@ align-items: center;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--subcolor);
+    padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 /* TEAM */
 /* FOOTER */
+.logo-footer {
+    margin-right: 93px;
+    padding-top: 60px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+ 
 .street-adress {
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
+    padding-top: 20px;
+    min-width: 231px;
 }
 .footer-email {
     font-style: normal;
@@ -288,7 +329,6 @@ align-items: center;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
@@ -303,6 +343,9 @@ align-items: center;
 }
 .footer{
     background: #2F303A;
+    width: 1600px;
+    height: 252px;
+    padding: 60px;
 }
 /* FOOTER */
 /* PORTFOLIO SECTION */
